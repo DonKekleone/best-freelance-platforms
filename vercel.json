@@ -3,9 +3,14 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.bestfreelanceplatforms.com" }],
-      "destination": "https://bestfreelanceplatforms.com/:path*",
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bestfreelanceplatforms.com"
+        }
+      ],
+      "destination": "https://bestfreelanceplatforms.com/$1",
       "permanent": true
     }
   ]
